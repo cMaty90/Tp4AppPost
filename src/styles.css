@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+.font-kani{
+  color: #FAFAE2;
+  font-family: 'Kanit', sans-serif;
+}
+
+.backgroundColor{
+  background-color: #313130;
+}
+
+hr{
+  color: #27C4F7;
+}
