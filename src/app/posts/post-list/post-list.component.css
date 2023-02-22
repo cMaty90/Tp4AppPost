@@ -1,4 +1,22 @@
 
+.row{
+  width: 75vw;
+}
 .table{
-  margin-left: 150px;
+  margin-left: 170px;
+}
+
+@media(max-width:780px){
+  .table{
+    margin-left: 80px;
+  }
+}
+
+@media(max-width:450px){
+  .table{
+    margin-left: 20px;
+  }
+  .row{
+    width: 90vw;
+  }
 }
