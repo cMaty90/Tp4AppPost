@@ -15,7 +15,7 @@ export class CommentsComponent implements OnInit{
   ngOnInit(): void {
     setTimeout(() => {
       this.showComments();
-    }, 900);
+    }, 800);
 
   }
 
