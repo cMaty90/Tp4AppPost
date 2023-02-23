@@ -11,6 +11,9 @@ export class AppComponent  implements OnInit{
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  showPostList() {
     this.router.navigate(['/posts'])
   }
 }

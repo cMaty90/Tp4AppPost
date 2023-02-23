@@ -1,0 +1,17 @@
+<div *ngFor="let comment of vectorComments" class="p-3">
+    <p class="font-kani">Name : {{comment.name|mayuscula:enMayuscula }}</p>
+    <p class="font-kani">{{comment.body}}</p>
+</div>
+
+
+<div class="d-flex">
+  <button type="button"
+          class="btn btn-primary"
+          (click)="showDate()">Show Actual Date</button>
+
+  <button type="button"
+          class="btn btn-primary"
+          (click)="changeNameComment()"
+          #btnDate>Change Name Of Comment</button>
+</div>
+

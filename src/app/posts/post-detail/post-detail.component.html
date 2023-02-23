@@ -1,1 +1,21 @@
-<p>post-detail works!</p>
+<h1 class="font-kani ms-3">Detail Post : {{idPost}}</h1>
+<br>
+<div class="ms-3">
+  <h2 class="font-kani">{{titlePost|titlecase}}</h2>
+  <span class="font-kani">fecha: {{actualDate|date:'d/M/y H:mm:ss'}}</span>
+</div>
+<br>
+
+<div class="w-50 ms-3">
+ <p class="font-kani">{{bodyPost}}</p>
+</div>
+
+<div class="comments border rounded-2 ms-3 mb-3">
+  <h5 class="font-kani text-center mt-2">Comments</h5>
+  <hr class="text-secondary">
+
+  <app-comments [idPost]="idPost"
+                (eventDate)="showDate($event)"></app-comments>
+
+</div>
+

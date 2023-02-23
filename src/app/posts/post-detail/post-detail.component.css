@@ -1,0 +1,10 @@
+
+.comments{
+  width: 70vw;
+}
+
+@media(max-width:680px){
+  .comments{
+    width: 90vw;
+  }
+}

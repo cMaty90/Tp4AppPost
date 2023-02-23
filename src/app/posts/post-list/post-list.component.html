@@ -19,7 +19,9 @@
           <td class="text-center font-kani">{{post.id}}</td>
           <td class="text-center font-kani">{{post.title}}</td>
           <td class="text-center font-kani">
-            <a href="#" routerLink="/posts/post/1">Ver Detalle Post</a>
+            <a href="#"
+               routerLink="/posts/post/{{post.id}}"
+               (click)="saveLinkPostDetail(post.id)">Ver Detalle Post</a>
           </td>
         </tr>
 
