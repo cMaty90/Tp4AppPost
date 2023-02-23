@@ -2,7 +2,9 @@
 <br>
 <div class="ms-3">
   <h2 class="font-kani">{{titlePost|titlecase}}</h2>
-  <span class="font-kani">fecha: {{actualDate|date:'d/M/y H:mm:ss'}}</span>
+  <p class="font-kani">fecha:
+    <span [ngClass]="{'d-inline': flagDate, 'd-none': !flagDate}">{{actualDate|date:'d/M/y H:mm:ss'}}</span>
+  </p>
 </div>
 <br>
 

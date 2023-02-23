@@ -15,6 +15,7 @@ export class PostDetailComponent implements OnInit{
   }
 
   actualDate: Date = new Date('Mon Jan 01 00 00:00:00 GMT-0300');
+  flagDate: boolean = false;
 
   linkPostDetail: string = this.postService.linkPostDetail;
 
@@ -35,6 +36,7 @@ export class PostDetailComponent implements OnInit{
     console.log('mi evento date');
     console.log(evento);
     this.actualDate = evento;
+    this.flagDate = true;
   }
 
 
