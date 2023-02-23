@@ -6,12 +6,14 @@ import { ErrorPathComponent } from './error/error-path/error-path.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { WelcomeComponent } from './error/welcome/welcome.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorPathComponent
+    ErrorPathComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
